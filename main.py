@@ -6,10 +6,10 @@ CROPS = [
 
 clear()
 
-def goto(x, y):
-    while get_pos_x() != tx or get_pos_y != ty:
-        current_x = get_pos_x
-        current_y = get_pos_y
+def goto(tx, ty):
+    while get_pos_x() != tx or get_pos_y() != ty:
+        current_x = get_pos_x()
+        current_y = get_pos_y()
 
         if tx >= current_x:
             x_direct = tx - current_x
@@ -61,7 +61,7 @@ def choose_plant():
     best = CROPS[0]
     best_count = num_items(best[1])
     for pair in CROPS:
-        count = num_items(best[1])
+        count = num_items(pair[1])
         if count < best_count:
             best = pair
             best_count = count

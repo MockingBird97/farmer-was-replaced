@@ -1,0 +1,12 @@
+{
+    "customizations":{
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "usernamehw.errorlens",
+                "streetsidesoftware.code-spell-checker"
+
+            ]
+        }
+    }
+}
